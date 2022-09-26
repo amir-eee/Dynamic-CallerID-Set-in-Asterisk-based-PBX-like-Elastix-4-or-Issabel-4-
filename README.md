@@ -74,6 +74,7 @@ Now go to PBX GUI :: Click on PBX > Dynamic CallerID .
 Notes:
 1. You can add multiple CallerID or DID numbers for the selected Outbound Routes using comma separated.
 2. Outbound Route CID can't be blank and should be unique and Override extension must be checked.
+3. Dynamic CallerID will set as a round-robin method.
 
 ![alt text](https://github.com/amir-eee/Dynamic-CallerID-Set-in-Asterisk-based-PBX-like-Elastix-4-or-Issabel-4-/blob/main/Dynamic%20CID%20Number%20List.PNG)
 ![alt text](https://github.com/amir-eee/Dynamic-CallerID-Set-in-Asterisk-based-PBX-like-Elastix-4-or-Issabel-4-/blob/main/Dynamic%20CID%20Create.PNG)
