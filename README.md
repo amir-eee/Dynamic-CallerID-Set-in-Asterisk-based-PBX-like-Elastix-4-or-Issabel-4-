@@ -57,7 +57,7 @@ Click on Save. It will redirect to your newly created module.
 exten => s,1,NoOp(The caller id name is: ${CALLERID(name)}) 
 exten => s,n,Set(callerid_new=${SHELL(php /var/www/html/dynamic_callerid/did_numbers.php) ${CALLERID(num)}}) 
 exten => s,n,NoOp(The new caller id number is: ${callerid_new} -- ${CALLERID(num)}) 
-exten => s,n,Set(CALLERID(all)=${callerid_new}) 
+exten => s,n,Set(CALLERID(all)=${IF($["${callerid_new}"=""]?${CALLERID(num)}:${callerid_new})})
 exten => s,n,MacroExit()
 ```
 
